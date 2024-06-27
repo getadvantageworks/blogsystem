@@ -1,0 +1,285 @@
+@charset "utf-8";
+/*
+フォントサイズ調整ここから-----------------------------------------------------
+*/
+body{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    background-color: #f6fbfd;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 20px;
+}
+/*
+フォントサイズ調整ここまで-----------------------------------------------------
+*/
+
+/*
+inputフォーム
+*/
+input{
+    background-color: #eee;
+}
+textarea{
+    background-color: #eee;
+}
+select{
+    background-color: #eee;
+}
+button{
+    background-color: #bbb;
+}
+/*
+aタグ調整
+*/
+a{
+    text-decoration: none;
+    color: #333;
+}
+/*
+a:visited{
+    color: #333;
+}
+*/
+a:hover{
+    color: #999;
+}
+
+
+/*
+ヘッダー調整
+*/
+header{
+    background-color: #aee2f5;
+
+    /*
+    h1中央揃えのためflexにする
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    幅は画面いっぱい、高さ60px
+    */
+    height: 60px;
+    width: 100%;
+    /*
+    左上固定のfixed
+    */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*
+トップページ画像
+*/
+.main-image{
+    width: 100%;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+/*
+ヘッダーとフッターに隠れないように上下に余白、見た目で左右に余白
+*/
+article{
+    padding: 80px 25px;
+}
+/*
+記事タイトル調整
+*/
+
+article .title{
+    margin: 10px 0;
+}
+
+article .title h2{
+    
+    padding: 10px;
+    border-left: 6px solid #aee2f5;
+    border-bottom: 2px dashed #aee2f5;
+}
+/*
+日付調整
+*/
+article .title p{
+    font-size: 16px;
+    margin: 5px 20px;
+}
+
+/*
+記事内容全体の左右の余白
+*/
+article .contents-body{
+    padding: 0 20px;
+}
+/*
+サブタイトル間の上下余白
+*/
+article .contents-body section{
+    margin: 30px 0;
+}
+
+/*
+カテゴリ一覧における上下余白
+*/
+
+article .contents-body .category-list li{
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #d9f1fa;
+    border: 1px solid #0a98bf;
+}
+
+/*
+記事一覧における上下余白
+*/
+
+article .contents-body .article-list li{
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #d9f1fa;
+    border: 1px solid #0a98bf;
+}
+
+/*
+記事一覧におけるタイトルの余白
+*/
+
+article .contents-body .article-list li h3{
+    margin-bottom: 10px;
+}
+
+/*
+サブタイトル調整
+*/
+article .contents-body h3{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-left: 3px solid #aee2f5;
+    border-bottom: 1px dashed #aee2f5;
+}
+
+/*
+本文余白調整
+*/
+article .contents-body .section-body{
+    margin: 20px;
+}
+
+/*
+ポイント調整
+*/
+
+.point{
+    background-color: #98e1f5;
+    margin: 15px;
+    border-radius:10px;
+}
+
+.point-title{
+    background-color: #59c5e3;
+    padding:10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #053846; 
+}
+
+.point-body{
+    padding:10px;
+}
+
+/*
+ソースコード調整
+*/
+
+.sourcecode{
+    background-color: #98e1f5;
+    margin: 15px;
+    border-radius:10px;
+}
+
+.sourcecode-title{
+    background-color: #59c5e3;
+    padding:10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #053846; 
+}
+
+.sourcecode-body{
+    padding:10px;
+}
+
+pre{
+    width:100%;
+    overflow: auto;
+}
+
+/*
+引用文調整
+*/
+
+.quote{
+    background-color: #98e1f5;
+    margin: 15px;
+    border-radius:10px;
+}
+
+.quote-title{
+    background-color: #59c5e3;
+    padding:10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #0a98bf; 
+}
+
+.quote-body{
+    padding:10px;
+}
+
+/*
+プロフィール調整
+*/
+.profile{
+    padding: 10px;
+    background-color: #ebf6fa;
+}
+
+.contents-body .profile h3{
+    margin-bottom: 10px;
+}
+
+.profile-body{
+    padding: 10px;
+}
+
+/*
+フッター
+*/
+footer{
+    background-color: #8cbfd1;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

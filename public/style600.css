@@ -1,0 +1,48 @@
+@media (min-width:600px){
+    /*
+    記事本体の幅上限を1200pxに
+    */
+    article{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    /*
+    カテゴリをタイル状に
+    */
+    .contents-body .category-list .category-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*
+    各カテゴリの幅を等しくする
+    */
+    article .contents-body .category-list li{
+        margin: 20px;
+        width: 250px;
+    }
+
+    /*
+    新着記事をタイル状に
+    */
+    .contents-body .article-list .article-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*
+    各新着記事の幅を等しくする
+    */
+    article .contents-body .article-list li{
+        margin: 20px;
+        width: 400px;
+    }
+}
