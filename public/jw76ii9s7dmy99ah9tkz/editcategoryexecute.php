@@ -68,9 +68,10 @@ if (!($checkCategoryStatement->fetch(PDO::FETCH_ASSOC))) {
     getAdminError("指定したカテゴリは存在しません。");
 }
 
-//重複チェック
-$checkCategoryStatement = $pdo->prepare("select categoryName from category where categoryName = :inputName");
+//重複チェック、取り扱う記事の上書きは許可
+$checkCategoryStatement = $pdo->prepare("select categoryName from category where categoryName = :inputName and not id = :inputId");
 $checkCategoryStatement->bindValue(":inputName", $_POST["newName"], PDO::PARAM_STR);
+$checkCategoryStatement->bindValue(":inputId", $_SESSION["editCategoryId"], PDO::PARAM_INT);
 $checkCategoryStatement->execute();
 if ($checkCategoryStatement->fetch(PDO::FETCH_ASSOC)) {
     getAdminError("指定したカテゴリはすでに存在しています。");
